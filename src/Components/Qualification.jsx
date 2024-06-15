@@ -1,30 +1,31 @@
 import React from 'react';
 import { Education } from '../constants';
+import { motion } from 'framer-motion';
 
 
 
 const Qualification = () => {
   return (
-    <div className=' text-white max-w-[1300px] mx-auto p-6 place-items-center my-8 overflow-x-hidden lg:overflow-x-hidden '>
+    <div className=' text-white max-w-[1300px] mx-auto p-6 place-items-center my-8   '>
 
-      <h1
+      <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 0.5 }}
 
-        className='mt-8 mb-11 text-center text-gray-200 text-3xl md:text-5xl font-bol underline underline-offset-8 font-bold uppercase '>Education</h1>
+        className='mt-8 mb-11 text-center text-gray-200 text-3xl md:text-5xl font-bol underline underline-offset-8 font-bold uppercase'>Experience</motion.h1>
       <div>
         {Education.map((Education, index) => {
           return (
             <div key={index} className='mb-8 flex flex-wrap lg:justify-center text-gray-300 '>
-              <div
+              <motion.div
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -100 }}
                 transition={{ duration: 0.5 }}
                 className='w-full lg:w-1/4'>
                 <p className='mb-2 text-sm text-gray-200 '>{Education.year}</p>
-              </div>
-              <div
+              </motion.div>
+              <motion.div
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
                 transition={{ duration: 0.5 }}
@@ -36,7 +37,7 @@ const Qualification = () => {
                   {Education.trade} - <span className='text-sm text-purple-200'>{Education.percentage}</span>
                 </p>
 
-              </div>
+              </motion.div>
             </div>
           )
         })}

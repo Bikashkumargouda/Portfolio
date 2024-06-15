@@ -1,17 +1,11 @@
 import React from 'react'
-import profile from '..//assets/Profile.webp'
-import { RiTailwindCssFill } from "react-icons/ri";
-// import {  } from 'framer-';
+import profile from '..//assets/Profile.jpg'
+import { FaFacebook, FaWhatsapp, FaTwitter, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
 
-import {
-  DiJavascript,
-  DiReact,
-  DiHtml5,
-  DiCss3,
-  DiBootstrap,
-  DiGithubBadge,
-} from 'react-icons/di'
+
+
 
 const iconVariants = (duration) => ({
   initial: { y: -10 },
@@ -48,67 +42,58 @@ const Personal = () => {
             <br />Beyond coding, I am dedicated to continuous learning and community involvement, often contributing to open-source projects and participating in local tech meetups. Let's build something amazing together!
           </p>
           <div
-            className="  bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-6 mt-3 ">
-            <ul
+            className="  bg-white bg-opacity-10 backdrop-blur-lg rounded-lg p-5 my-3 ">
+            <motion.ul
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
               transition={{ duration: 1.5 }}
 
-              className='skill  flex flex-wrap text-center items-center md:flex gap-4 text-2xl md:text-5xl  justify-center'>
-              <li
+              className='skill  flex flex-wrap text-center items-center md:flex gap-5 text-2xl md:text-5xl  justify-center'>
+              <motion.li
                 variants={iconVariants(2.5)}
                 initial="initial"
                 animate="animate"
-                className=' flex flex-col justify-center items-center text-center  '>
-                <DiHtml5 className='text-[#DD4B25]' />
-                <p className='text-xl'>HTML</p>
-              </li>
-              <li
+              >
+                <FaFacebook className='text-[#1092EE]' />
+              </motion.li>
+              <motion.li
                 variants={iconVariants(3.5)}
                 initial="initial"
                 animate="animate"
-                className=' flex flex-col justify-center items-center text-center'><DiCss3 className='text-[#254BDD]' />
-                <p className='text-xl'>CSS</p>
-              </li>
-              <li
+                className=' flex flex-col justify-center items-center text-center'><FaInstagram className='text-[#EF206C]' />
+                {/* <p className='text-xl'>CSS</p> */}
+              </motion.li>
+              <motion.li
                 variants={iconVariants(2.5)}
                 initial="initial"
                 animate="animate"
-                className=' flex flex-col justify-center items-center text-center'><DiJavascript className='text-[#EFD81D]' />
-                <p className='text-xl'>Java-Script</p>
-              </li>
-              <li
+                className=' flex flex-col justify-center items-center text-center'><FaWhatsapp className='text-[#27D045]' />
+                {/* <p className='text-xl'>Java-Script</p> */}
+              </motion.li>
+              <motion.li
                 variants={iconVariants(3.5)}
                 initial="initial"
                 animate="animate"
-                className=' flex flex-col justify-center items-center text-center'><DiBootstrap className='text-[#8713F4]' />
-                <p className='text-xl'>Bootstrap</p>
-              </li>
+                className=' flex flex-col justify-center items-center text-center'><FaTwitter className='text-[#1C96E8]' />
+                {/* <p className='text-xl'>Bootstrap</p> */}
+              </motion.li>
 
-              <li
+              <motion.li
                 variants={iconVariants(2.5)}
                 initial="initial"
                 animate="animate"
-                className=' flex flex-col justify-center items-center text-center'><DiReact className='text-[#5ED3F3]' />
-                <p className='text-xl'>React</p>
-              </li>
+                className=' flex flex-col justify-center items-center text-center'><FaLinkedin className='text-[#0270AD]' />
+                {/* <p className='text-xl'>React</p> */}
+              </motion.li>
 
-              <li
+              <motion.li
                 variants={iconVariants(3.5)}
                 initial="initial"
                 animate="animate"
-                className=' flex flex-col justify-center items-center text-center'><DiGithubBadge className='text-orange-600' />
-                <p className='text-xl'>Github</p>
-              </li>
-              <li
-                variants={iconVariants(2.5)}
-                initial="initial"
-                animate="animate"
-                className=' flex flex-col justify-center items-center text-center'>
-                <RiTailwindCssFill className='text-[#38BDF8]' />
-                <p className='text-xl'>Tailwind</p>
-              </li>
-            </ul>
+                className=' flex flex-col justify-center items-center text-center'><FaGithub className='text-[#000000]' />
+                {/* <p className='text-xl'>Github</p> */}
+              </motion.li>
+            </motion.ul>
           </div>
         </div>
 

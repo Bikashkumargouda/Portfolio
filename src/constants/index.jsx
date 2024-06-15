@@ -55,9 +55,9 @@ export const AllProject = [
     title: "University Website",
     desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
   },
-  {
-    image: project1,
-    title: "Spotify UI Clone",
-    desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
-  }
+  // {
+  //   image: project1,
+  //   title: "Spotify UI Clone",
+  //   desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
+  // }
 ]

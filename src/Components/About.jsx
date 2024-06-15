@@ -12,8 +12,6 @@ const About = () => {
       <Personal />
       <Experience />
       <Qualification />
-
-
     </div>
   )
 }
