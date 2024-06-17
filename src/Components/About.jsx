@@ -2,6 +2,7 @@ import React from 'react'
 import Personal from './Personal'
 import Qualification from './Qualification';
 import Experience from './Experience';
+import PersonalDetails from './PersonalDetails';
 
 
 
@@ -12,6 +13,7 @@ const About = () => {
       <Personal />
       <Experience />
       <Qualification />
+      <PersonalDetails />
     </div>
   )
 }
