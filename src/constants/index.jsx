@@ -1,6 +1,7 @@
 
-import project1 from "..//assets/p1.webp"
-import project2 from "..//assets/p2.webp"
+import project1 from "..//assets/ecommerce.png"
+import project2 from "..//assets/quiz.jpg"
+import project3 from "..//assets/siit.jpg"
 import { FaFacebook, FaWhatsapp, FaTwitter, FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import html from "..//assets/html.png"
 import css from "..//assets/css.png"
@@ -48,28 +49,77 @@ export const WorkExperience = [
   }
 ]
 
-export const AllProject = [
+export const Project = [
   {
     image: project1,
-    title: "Coffee Shop",
-    desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
+    title: "E-commerce UI",
+    desc: " Created a visually appealing e-commerce UI using React and Tailwind CSS, showcasing responsive design and modern layouts for product listings, search, and shopping cart views. Focused on delivering an intuitive and engaging user interface.",
+    url: "https://coralecom.netlify.app/",
+    github: "https://github.com/Bikashkumargouda/eCommerce",
   },
   {
     image: project2,
-    title: "AI Landing Page",
+    title: "QuizApp",
     desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
+    url: "https://bikashkumargouda.github.io/QuizApp/",
+    github: "https://github.com/Bikashkumargouda/QuizApp",
   },
   {
-    image: project1,
-    title: "University Website",
+    image: project3,
+    title: "SIIT Website",
     desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
+    url: "https://www.siitsurada.in/",
+    github: "https://github.com/Bikashkumargouda/SIIT-Frontend",
   },
-  // {
-  //   image: project1,
-  //   title: "Spotify UI Clone",
-  //   desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
-  // }
 ]
+
+export const AllProject = [
+  {
+    image: project1,
+    title: "E-commerce UI",
+    desc: " Created a visually appealing e-commerce UI using React and Tailwind CSS, showcasing responsive design and modern layouts for product listings, search, and shopping cart views. Focused on delivering an intuitive and engaging user interface.",
+    url: "https://coralecom.netlify.app/",
+    github: "https://github.com/Bikashkumargouda/eCommerce",
+  },
+  {
+    image: project2,
+    title: "QuizApp",
+    desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
+    url: "https://bikashkumargouda.github.io/QuizApp/",
+    github: "https://github.com/Bikashkumargouda/QuizApp",
+  },
+  {
+    image: project3,
+    title: "SIIT Website",
+    desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
+    url: "https://www.siitsurada.in/",
+    github: "https://github.com/Bikashkumargouda/SIIT-Frontend",
+  },
+  {
+    image: project3,
+    title: "SIIT Website",
+    desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
+    url: "https://www.siitsurada.in/",
+    github: "https://github.com/Bikashkumargouda/SIIT-Frontend",
+  },
+  {
+    image: project3,
+    title: "SIIT Website",
+    desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
+    url: "https://www.siitsurada.in/",
+    github: "https://github.com/Bikashkumargouda/SIIT-Frontend",
+  },
+  {
+    image: project3,
+    title: "SIIT Website",
+    desc: " Conceptualized and designed a clean, intuitive user interface for a coffee shop Website, focusing on enhancing the user experience and ensuring ease of navigation.",
+    url: "https://www.siitsurada.in/",
+    github: "https://github.com/Bikashkumargouda/SIIT-Frontend",
+  },
+]
+
+
+
 
 export const SocialLinklogo = [
   {

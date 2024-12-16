@@ -1,14 +1,13 @@
 import React from 'react'
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import "./Project.css"
-import { Project } from '../constants'
-const ProjectList = () => {
+import { AllProject } from '../constants'
 
-
+const AllProjectList = () => {
   return (
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 lg:my-20 my-5 mx-5 ">
 
-      {Project.map((item, index) => {
+      {AllProject.map((item, index) => {
         return (
           <div key={index} className="row relative overflow-hidden rounded-md ">
             <img src={item.image} className='w-full rounded-md block h-full ' alt="" />
@@ -31,4 +30,4 @@ const ProjectList = () => {
   )
 }
 
-export default ProjectList
+export default AllProjectList

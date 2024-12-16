@@ -1,6 +1,7 @@
 import React from 'react'
 import profile from '..//assets/Profile.jpg'
 import SocialLink from './SocialLink';
+import LazyLoad from 'react-lazyload';
 
 
 
@@ -30,7 +31,10 @@ const Personal = () => {
           <div className='w-full h-full absolute -inset-1 bg-gradient-to-r from-teal-100 to-teal-900 rounded-full blue opacity-25 group-hover:opacity-100 transition duration-300'>
           </div>
           <div className="relative w-full p-4 bg-white bg-opacity-10 backdrop-bur-full rounded-full">
-            <img src={profile} alt="" className='md:max-w-[500px] md:max-h-[400px] max-h-[300px] rounded-full' />
+            <LazyLoad height={200} offset={100} placeholder={<div>Loading image...</div>}>
+              <img src={profile} alt="" className='md:max-w-[500px] md:max-h-[400px] max-h-[300px] rounded-full' />
+            </LazyLoad>
+
           </div>
         </div>
       </div >
